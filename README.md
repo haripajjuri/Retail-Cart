@@ -1,4 +1,4 @@
 ## Retail cart
 
 ### an E-Commerce website build using MERN stack.
-![](https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif)
+![](https://media.giphy.com/media/iFmw13LV1hHhViPPWz/giphy.gif)
