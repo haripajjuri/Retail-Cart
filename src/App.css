@@ -15,11 +15,14 @@
 
 #logo{
   margin-left: 20px;
+  font-weight: 600;
   height: 30px;
   width: 100px;
   /* border: 2px solid green; */
   display: flex;
   align-items: center;
+  cursor: pointer;
+
 }
 
 #navComponents{
@@ -29,7 +32,7 @@
   padding-left: 40px;
   justify-content: space-around;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
   margin-right: 80px;
   height: 30px;
   /* border: 2px solid blue; */
