@@ -1,8 +1,9 @@
 import React from "react"
-// import leftIcon from '../left-arrow.png'
-import rightIcon from '../right-arrow.png'
-import img1 from '../images/main_image_star-forming_region_carina_nircam_final-1280.jpg'
-import img2 from '../images/pexels-pixabay-268533.jpg'
+import cam from '../images/camera.jpg'
+import shoes from '../images/shoes.jpg'
+import clothes from '../images/clothes.jpg'
+import lr from '../images/left-arrow.png'
+import rr from '../images/right-arrow.png'
 
 import { useState } from "react"
 
@@ -10,17 +11,17 @@ export default function Slider(){
 
     const sliderdata = [
         {
-           
+            "img":`${cam}`,
             "title":"summer sale",
-            "desc":"avail more than 40% off on each purchase"
+            "desc":"avail more than 40% off on Cameras"
         },
         {
-           
+            "img":`${shoes}`,
             "title":"winter sale",
             "desc":"avail more than 40% off on each purchase"
         },
         {
-            
+            "img":`${clothes}`,
             "title":"spring sale",
             "desc":"avail more than 40% off on each purchase"
         }
@@ -38,21 +39,12 @@ export default function Slider(){
     return(
         <div className="Slider">
             <div className="slides">
-
-            {/* <div className="slide">
-                <img src={img1} alt="image here" />
-                <div className="titles">
-                    <h1>hello</h1>
-                    <h4>desc</h4>
-                </div>
-            </div> */}
-
             {
                 sliderdata.map((ele)=>
                     (<div className="slide" style={{
                         transform: `translate(-${index}%)`
                     }}>
-                        <img src={img1} alt="image here" />
+                        <img src={ele.img} alt="" />
                         <div className="titles">
                             <h1>{ele.title}</h1>
                             <h4>{ele.desc}</h4>
@@ -63,8 +55,12 @@ export default function Slider(){
 
 
             </div>
-            <button id="btn" onClick={()=>{handleChange("left")}}>prev</button>
-            <button id="btn" onClick={()=>{handleChange("right")}}>next</button>
+            <div id="lbtn" onClick={()=>{handleChange("left")}}>
+                <img src={lr} alt="" />
+            </div>
+            <div id="rbtn" onClick={()=>{handleChange("right")}}>
+                <img src={rr} alt="" />
+            </div>
 
         </div>
     )

@@ -48,7 +48,7 @@
   margin-top: 4px;
   height: 89vh;
   width: 97.5vw;
-  background-color: rgb(212, 189, 234);
+  background-color: 	#eaeded;
   border-radius: 20px;
 
 }
@@ -73,18 +73,47 @@
 .slide img{
   object-fit: cover;
   width: 40%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 
 }
 
-#btn{
-  height: 50px;
-  background-color: brown;
-  margin: 10px;
+#rbtn{
+  height: 100%;
+  width: 60px;
+  background-color: rgba(252, 238, 238, 0);
   position: relative;
-  bottom: 60%;
-  border-radius: 50px ;
+  bottom: 200%;
+  left: 95.72%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
+
+
+#lbtn{
+  height: 100%;
+  width: 60px;
+  background-color: rgba(252, 238, 238, 0);
+  position: relative;
+  bottom: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#lbtn img{
+  height: 20px;
+  width: 20px;
+}
+
+#rbtn img{
+  height: 20px;
+  width: 20px;
+}
+
+
 .titles{
   display: flex;
   flex-direction: column;
