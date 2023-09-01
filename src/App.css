@@ -42,49 +42,72 @@
   cursor: pointer;
 }
 
-.SliderContainer{
+
+
+.Slider{
   margin-top: 4px;
-  height: 90vh;
-  width: 99%;
-  /* border: 1px solid black; */
-  background-color: coral;
+  height: 89vh;
+  width: 97.5vw;
+  background-color: rgb(212, 189, 234);
+  border-radius: 20px;
+
 }
 
-
-
-.arrows{
-  display: flex;
-  height: 99%;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.arrow{
-  display: flex;
-  height: 100%;
-  cursor: pointer;
-  align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.arrow img{
-  width: 26px;
-}
-.images{
-  height: 100%;
+.slides{
   width: 100%;
+  height: 100%;
+  display: flex;
   overflow: hidden;
+  border-radius: 20px;
+
 }
 
 .slide{
   width: 100%;
-  height: 100%;
+  flex-shrink: 0;
+  display: flex;
+  /* transform: translate(-200%); */
+  transition: all 1.5s ease-in-out;
 }
+
+.slide img{
+  object-fit: cover;
+  width: 40%;
+  border: 2px solid red;
+
+}
+
+#btn{
+  height: 50px;
+  background-color: brown;
+  margin: 10px;
+  position: relative;
+  bottom: 60%;
+  border-radius: 50px ;
+}
+.titles{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left:40px ;
+  margin-top: 50px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 40%;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 .App{
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
