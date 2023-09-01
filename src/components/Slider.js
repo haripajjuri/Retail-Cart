@@ -1,7 +1,7 @@
 import React from "react"
-import leftIcon from '../left-arrow.png'
-import rightIcon from '../right-arrow.png'
-import img from '../images/main_image_star-forming_region_carina_nircam_final-1280.jpg'
+// import leftIcon from '../left-arrow.png'
+// import rightIcon from '../right-arrow.png'
+// import img from '../images/main_image_star-forming_region_carina_nircam_final-1280.jpg'
 export default function Slider(){
     return(
         <div className="SliderContainer">
