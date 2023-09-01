@@ -45,12 +45,13 @@
 
 
 .Slider{
-  margin-top: 4px;
   height: 89vh;
   width: 97.5vw;
   background-color: 	#eaeded;
   border-radius: 20px;
-
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
 }
 
 .slides{
@@ -67,7 +68,7 @@
   flex-shrink: 0;
   display: flex;
   /* transform: translate(-200%); */
-  transition: all 1.5s ease-in-out;
+  transition: all 1.4s ease-in-out;
 }
 
 .slide img{
@@ -88,29 +89,41 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  
 }
 
 
 #lbtn{
   height: 100%;
   width: 60px;
-  background-color: rgba(252, 238, 238, 0);
   position: relative;
   bottom: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition:all 1.5s ease-in-out;
+  border-radius: 20px 0 0 20px;
 }
+
 
 #lbtn img{
   height: 20px;
   width: 20px;
+  transition:all 1.5s ease-in-out;
+
 }
 
 #rbtn img{
   height: 20px;
+  transition: 1.5s ease-in-out;
   width: 20px;
+}
+
+.titles h1{
+  font-size: 100px;
+  line-height: 110px;
+  font-weight: 400;
 }
 
 
@@ -125,6 +138,56 @@
 
 }
 
+.categories{
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 30px 15px 0 15px;
+}
+
+.categoryCard {
+  flex: 1;
+  height: 70vh;
+  position: relative;
+}
+.info{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000090;
+  border-radius: 8px;
+}
+
+.info h3{
+  color: rgb(231, 231, 226);
+  margin: 10px;
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-weight: 400;
+}
+
+.info button{
+  outline: none;
+  padding: 10px;
+  width: 100px;
+  font-weight: 300;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 6px;
+}
+
+.categoryCard img{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
 
 
 
@@ -132,11 +195,9 @@
 
 
 
-
-
-
+/* 
 .App{
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */

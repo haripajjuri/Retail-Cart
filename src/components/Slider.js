@@ -12,28 +12,30 @@ export default function Slider(){
     const sliderdata = [
         {
             "img":`${cam}`,
-            "title":"summer sale",
+            "title":"SUMMER SALE",
             "desc":"avail more than 40% off on Cameras"
         },
         {
             "img":`${shoes}`,
-            "title":"winter sale",
+            "title":"WINTER SALE",
             "desc":"avail more than 40% off on each purchase"
         },
         {
             "img":`${clothes}`,
-            "title":"spring sale",
+            "title":"SPRING SALE",
             "desc":"avail more than 40% off on each purchase"
-        }
+        },
     ];
 
     let [index, setIndex ] = useState(0);
+    const length = Object.entries(sliderdata).length;
+
     const handleChange =(direction)=>{
         if(direction === "left"){
-            setIndex(index > 0 ? index-100 : 200) 
+            setIndex(index > 0 ? index-100 : (length-1)*100) 
         }
         else{
-            setIndex(index < 200 ? index+100 : 0)
+            setIndex(index < (length-1)*100 ? index+100 : 0)
         }
     }
     return(
