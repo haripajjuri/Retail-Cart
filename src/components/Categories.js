@@ -1,40 +1,68 @@
 import React from "react";
 export default function Categories(){
-    const data = [
+    const data1 = [
         {
             "id":1,
-            "img":"https://images.pexels.com/photos/1502216/pexels-photo-1502216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "img":"https://images.pexels.com/photos/4641825/pexels-photo-4641825.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
             "category":"CLOTHES"
         },
         {
             "id":2,
-            "img":"https://images.pexels.com/photos/4069535/pexels-photo-4069535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "category":"ELECTRONICS"
+            "img":"https://images.pexels.com/photos/5412270/pexels-photo-5412270.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "category":"LAPTOPS"
         },
         {
             "id":3,
             "img":"https://images.pexels.com/photos/1697218/pexels-photo-1697218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
             "category":"WATCHES"
+        },{
+            "id":4,
+            "img":"https://images.pexels.com/photos/68814/pexels-photo-68814.jpeg?auto=compress&cs=tinysrgb&w=1600",
+            "category":"SHOES"
+        }
+    ];
+
+    const data2 =[
+        {
+            "id":1,
+            "img":"https://images.pexels.com/photos/1203803/pexels-photo-1203803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "category":"CAMERAS"
+        },
+        {
+            "id":2,
+            "img":"https://images.pexels.com/photos/1697218/pexels-photo-1697218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "category":"WATCHES"
         }
     ]
     return(
-        // <div>
-        //     <div>
-        //         <h2>categories</h2>
-        //     </div>
-        <div className="categories"> 
+        <div id="categories">
+        <div className="categories1"> 
             {
-                data.map((ele)=>(
-                    <div className="categoryCard">
+                data1.map((ele)=>(
+                    <div className="category1Card">
                         <img src={ele.img} alt="here" />
-                        <div className="info">
+                        <div className="info1">
                             <h3>{ele.category}</h3>
-                            <button>show more</button>
+                            {/* <button>show more</button> */}
                         </div>
                     </div>
                 ))
             }
         </div>
-        // </div>
+        
+        <div className="categories2">
+            {
+                data2.map((ele)=>(
+                    <div className="category2Card">
+                        <img src={ele.img} alt="" />
+                        <div className="info2">
+                            <h3>{ele.category}</h3>
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+
+        </div>
     )
 }

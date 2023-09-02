@@ -138,20 +138,31 @@
 
 }
 
-.categories{
-  height: 100vh;
+.categories1{
+  /* height: 100vh; */
   display: flex;
   justify-content: space-between;
-  gap: 0.5rem;
-  margin: 30px 15px 0 15px;
+  gap: 0.9rem;
+  margin: 30px 18px 0 18px;
+  /* border: 2px solid red; */
 }
 
-.categoryCard {
+.category1Card {
   flex: 1;
-  height: 70vh;
+  height: 58vh;
   position: relative;
+  cursor: pointer;
+  transition: all 1s ease-in;
+  border-radius: 10px;
 }
-.info{
+
+.category1Card:hover{
+  transform: scale(1.022);
+  z-index: 2;
+  /* box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.435); */
+}
+
+.info1{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -162,38 +173,77 @@
   align-items: center;
   justify-content: center;
   background-color: #00000090;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
-.info h3{
+.info1 h3{
   color: rgb(231, 231, 226);
   margin: 10px;
-  font-size: 50px;
-  letter-spacing: 5px;
+  font-size: 37px;
+  letter-spacing: 7px;
   font-weight: 400;
 }
 
-.info button{
-  outline: none;
-  padding: 10px;
-  width: 100px;
-  font-weight: 300;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  border-radius: 6px;
-}
 
-.categoryCard img{
+.category1Card img{
   width: 100%;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
   object-fit: cover;
+
 }
 
 
+.categories2{
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin: 14px 18px 0 18px;
+}
 
+.category2Card{
+  flex: 1;
+  position: relative;
+  height: 47vh;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.8s ease-in;
+}
 
+.category2Card:hover{
+  transform: scale(1.011);
+  z-index: 2;
+  /* box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.435); */
+}
+   
+.category2Card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 
+}
 
+.info2{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000090;
+  border-radius: 10px;
+}
+
+.info2 h3{
+  color: rgb(231, 231, 226);
+  margin: 10px;
+  font-size: 37px;
+  letter-spacing: 7px;
+  font-weight: 400;
+}
 
 /* 
 .App{
