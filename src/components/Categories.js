@@ -36,6 +36,7 @@ export default function Categories(){
     ]
     return(
         <div id="categories">
+            <h1>categories</h1>
         <div className="categories1"> 
             {
                 data1.map((ele)=>(
