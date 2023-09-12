@@ -171,9 +171,8 @@
 .info1 h3{
   color: rgb(231, 231, 226);
   margin: 10px;
-  font-size: 37px;
   letter-spacing: 7px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 #categories h1{
@@ -232,10 +231,30 @@
 .info2 h3{
   color: rgb(231, 231, 226);
   margin: 10px;
-  font-size: 37px;
   letter-spacing: 7px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
+.items{
+  padding-top: 20px;
+  height: 100vh;
+}
 
+.items h1{
+  margin-left: 25px;
+}
 
+.itemCard{
+  height: 50vh;
+  width: 22vw;
+  border: 2px solid red;
+}
+
+.itemsContainer{
+  display: flex;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 25px;
+  /* padding-left: 25px; */
+}
